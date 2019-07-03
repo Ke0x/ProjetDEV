@@ -88,7 +88,7 @@ void setup() {
   //setupSPIFFS();      // Initialisation du SPIFFS avec un fichier de configuration
   //setupNTP();         // Initialisation de l'heure
   //setupWiFiManager(); // Initialisation du WiFi Manager
-  //setupWebServer();   // Initialisation du serveur web
+  setupWebServer();   // Initialisation du serveur web
   //setupOTA();         // Initialisation de la mise à jour de firmware OTA
   //setupMQTT();          // Initialisation du client MQTT
   setupAdafruitIO();
@@ -107,7 +107,7 @@ void loop() {
   //getSoilData();      // Lecture des données du capteur d'humidité du sol
   //getDhtData();       // Lecture des données du capteur DHT
   //getNTP();           // Récupération de l'heure auprès du serveur NTP
-  //loopWebServer();    // Gestion des clients du serveur Web
+  loopWebServer();    // Gestion des clients du serveur Web
   //loopOTA();          // Gestion des mises à jour de firmware par WiFi
   //loopMQTT();         // Gestion de la connexion au broker MQTT
   loopAdafruitIO();

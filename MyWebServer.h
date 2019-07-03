@@ -79,6 +79,20 @@ void loopWebServer(){
             } else {
               client.println("<p><a href=\"/LED/off\"><button class=\"button button2\">OFF</button></a></p>");
             } 
+            client.println("<table>");
+            client.println("<tr>");
+            client.println("<th>Plante<th>");
+            client.println("<th>Température Air<th>");
+            client.println("<th>Température Sol<th>");
+            client.println("<th>Humidité Air<th>");
+            client.println("<th>Humidité Sol<th>");
+            client.println("</tr>");
+              client.println("<th>Plante<th>");
+              client.println("<th>25°<th>");
+              client.println("<th>10°<th>");
+              client.println("<th>5%<th>");
+              client.println("<th>20%<th>");
+              client.println("</tr>");
             client.println("</body></html>");
             // On termine avec une ligne vide pour indiquer la fin de la réponse            
             client.println();
